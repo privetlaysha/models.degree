@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MODELS.DEGREE — Modeling Career System</title>
+<meta name="description" content="MODELS.DEGREE — Modeling Career System. Coming soon.">
+<meta property="og:title" content="MODELS.DEGREE — Modeling Career System">
+<meta property="og:description" content="Coming soon.">
+<meta property="og:image" content="https://models.degree/og.jpg">
+<meta property="og:url" content="https://models.degree/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root { --bg:#000; --fg:#fff; --muted:rgba(255,255,255,.55); --line:rgba(255,255,255,.18); }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html,body { height:100%; }
+  body {
+    background:var(--bg); color:var(--fg);
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    display:flex; flex-direction:column; min-height:100vh; min-height:100svh;
+  }
+  .hero { flex:1; display:flex; align-items:center; justify-content:center; padding:24px 0; }
+  .hero img { width:100%; max-width:1600px; height:auto; display:block;
+    animation:fade 1.6s ease-out both; }
+  .bar {
+    display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;
+    padding:22px clamp(16px,4vw,48px); border-top:1px solid var(--line);
+    font-size:12px; letter-spacing:.22em; text-transform:uppercase;
+    animation:fade 1.6s .5s ease-out both;
+  }
+  .soon { color:var(--fg); font-weight:700; }
+  .soon i { display:inline-block; width:7px; height:7px; border-radius:50%; background:#fff;
+    margin-right:12px; vertical-align:middle; animation:pulse 2s infinite; }
+  .bar a { color:var(--muted); text-decoration:none; transition:color .2s; }
+  .bar a:hover { color:var(--fg); }
+  .links { display:flex; gap:28px; flex-wrap:wrap; }
+  @keyframes fade { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
+  @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:.25; } }
+  @media (max-width:640px) {
+    .hero { overflow:hidden; }
+    .hero img { width:160%; max-width:none; flex-shrink:0; }
+    .bar { flex-direction:column; align-items:flex-start; letter-spacing:.16em; }
+    .links { gap:20px; }
+  }
+  @media (prefers-reduced-motion:reduce) { * { animation:none !important; } }
+</style>
+</head>
+<body>
+  <main class="hero">
+    <img src="hero.jpg" width="2023" height="1140" alt="MODELS.DEGREE — Modeling Career System">
+  </main>
+  <footer class="bar">
+    <span class="soon"><i></i>Coming soon</span>
+    <nav class="links">
+      <a href="mailto:hello@models.degree">hello@models.degree</a>
+    </nav>
+  </footer>
+</body>
+</html>
